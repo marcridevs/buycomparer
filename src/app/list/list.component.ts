@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductComponent } from '../product/product.component';
-import { PRODUCTS } from '../mock-products';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -9,12 +7,10 @@ import { PRODUCTS } from '../mock-products';
 })
 export class ListComponent implements OnInit {
 
-  listItems = PRODUCTS;
+  @Input() items : any[]
 
   constructor() { }
 
   ngOnInit(): void {
-    
   }
-
-}
+};
