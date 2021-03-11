@@ -12,6 +12,6 @@ export class RestClientService {
   constructor(private http : HttpClient) { }
 
   public getProducts() {
-    return this.http.get<Product[]>(this.serverApi + "product");
+    return this.http.get<Product[]>(this.serverApi + "product/all");
   }
 }
