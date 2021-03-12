@@ -14,4 +14,8 @@ export class RestClientService {
   public getProducts() {
     return this.http.get<Product[]>(this.serverApi + "product/all");
   }
+
+  public getProduct(id : string) {
+    return this.http.get<Product>(this.serverApi + "product/" + id);
+  }
 }

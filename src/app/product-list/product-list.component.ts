@@ -34,9 +34,11 @@ export class ProductListComponent implements OnInit {
 
       listProducts.forEach((product) => {
         this.listItemProducts.push({
+          id: product.id,
           name: product.name,
           description: product.description,
           img: product.img_product,
+          detailRoute: '/product/'+ product.id
         });
       });
     });

@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card [routerLink]="item.detailRoute ? [item.detailRoute] : []">
     <mat-card-header>
         <mat-card-title>{{item.name}}</mat-card-title>
         <mat-card-subtitle>{{item.description}}</mat-card-subtitle>

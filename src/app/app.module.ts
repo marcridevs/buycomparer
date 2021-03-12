@@ -9,8 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 
-import { ListComponent } from './list/list.component';
-import { ListItemComponent } from './list-item/list-item.component';
+import { ListGridComponent } from './list-grid/list-grid.component';
+import { ListGridItemComponent } from './list-grid-item/list-grid-item.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
@@ -18,8 +18,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    ListItemComponent,
+    ListGridComponent,
+    ListGridItemComponent,
     ProductListComponent,
     ProductDetailComponent
   ],

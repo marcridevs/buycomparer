@@ -1,0 +1,8 @@
+<mat-grid-list cols="4" rowHeight="90%" gutterSize="1em">
+  <mat-grid-tile colspan="2" *ngIf="product">
+    <app-list-grid-item [item]="productItem"></app-list-grid-item>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    List of prices
+  </mat-grid-tile>
+</mat-grid-list>
